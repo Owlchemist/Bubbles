@@ -10,12 +10,14 @@ namespace Bubbles.Patch
   {
     private static void Postfix()
     {
-      try { Bubbler.Draw(); }
+      Bubbler.Draw();
+      /*
       catch (Exception exception)
       {
         Mod.Error($"Deactivated because draw failed with error: [{exception.Source}: {exception.Message}]\n\nStacktrace:\n{exception.StackTrace}");
         Settings.Activated = false;
       }
+      */
     }
   }
 }

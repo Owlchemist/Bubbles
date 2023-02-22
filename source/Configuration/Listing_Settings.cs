@@ -36,7 +36,7 @@ namespace Bubbles.Configuration
       Text.Anchor = anchor;
 
       value = Slider(value, min, max);
-      if (roundTo > 0f) { value = Mathf.Round(value / roundTo) * roundTo; }
+      if (roundTo > 0f) { value = (float)System.Math.Round(value / roundTo) * roundTo; }
     }
 
     public void SliderLabeled(string label, ref int value, int min, int max, int roundTo = -1, string display = null)

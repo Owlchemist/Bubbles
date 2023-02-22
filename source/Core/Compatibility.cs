@@ -9,8 +9,8 @@ namespace Bubbles.Core
   {
     private static readonly bool CameraPlusLoaded = ModsConfig.IsActive("brrainz.cameraplus");
 
-    public static readonly FastInvokeHandler BeginGroupHandler = MethodInvoker.GetHandler(typeof(Widgets).GetMethod("BeginGroup", new[] { typeof(Rect) }) ?? typeof(GUI).GetMethod(nameof(GUI.BeginGroup), new[] { typeof(Rect) }));
-    public static readonly FastInvokeHandler EndGroupHandler = MethodInvoker.GetHandler(typeof(Widgets).GetMethod("EndGroup", new Type[] { }) ?? typeof(GUI).GetMethod(nameof(GUI.EndGroup), new Type[] { }));
+    //public static readonly FastInvokeHandler BeginGroupHandler = MethodInvoker.GetHandler(typeof(Widgets).GetMethod("BeginGroup", new[] { typeof(Rect) }) ?? typeof(GUI).GetMethod(nameof(GUI.BeginGroup), new[] { typeof(Rect) }));
+    //public static readonly FastInvokeHandler EndGroupHandler = MethodInvoker.GetHandler(typeof(Widgets).GetMethod("EndGroup", new Type[] { }) ?? typeof(GUI).GetMethod(nameof(GUI.EndGroup), new Type[] { }));
 
     private static FastInvokeHandler _cameraPlusLerpRootSize;
 
